@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./calendar.css" />
+    <title></title>
+  </head>
+  <body>
+    <button id="prev" type="button">前の月</button>
+    <button id="next" type="button">次の月</button>
+    <div id="calendar"></div>
+    <div id="easyModal" class="modal">
+      <form class="modal-content">
+        <div class="modal-header">
+          <h1>test</h1>
+          <span id="modalCloseButton">×</span>
+        </div>
+        <div class="modal-body">
+          <input type="hidden" value="" id="date-input" />
+          <input
+            type="text"
+            id="input-content"
+            name="todo-content"
+            placeholder="content"
+          />
+          <button type="submit" id="submit-button">送信</button>
+        </div>
+      </form>
+    </div>
+    <script src="./calendar.js"></script>
+    <script src="./modal_calendar.js"></script>
+  </body>
+</html>
